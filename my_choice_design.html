@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style_page1.css">
+    <title>MRC</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/MRC_white_logo.png" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Our Therapist</a></li>
+                            <li><a class="dropdown-item" href="#">Therapist Details</a></li>
+                            <li><a class="dropdown-item" href="#">Pricing</a></li>
+                            <li><a class="dropdown-item" href="#">Book Appointment</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center ml-auto" id="exampleModalLabel">Book Appointmnet</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+                        <div class="single-line">
+                            <div class="form-group1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Your name*">
+                            </div>
+                            <div class="form-group2">
+                                <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="10"
+                                    placeholder="Phone number*">
+                            </div>
+                        </div>
+                        <div class="single-line">
+                            <div class="form-group1">
+                                <input type="email" class="form-control" id="exampleFormControlInput3"
+                                    placeholder="Your e-mail*">
+                            </div>
+                            <div class="form-group2">
+                                <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="3"
+                                    placeholder="Age">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="How do we help you ?" rows="3" cols="5"></textarea>
+                        </div>
+                        <button class="btn"> SUBMIT </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overflow-hidden">
+        <!-- banner -->
+        <section class="banner-bg overflow-hidden">
+            <div class="container-fluid p-0 m-0">
+                <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
+                    <div class="container">
+                        <div class="banner-holder row text-align-center">
+                            <div class="banner-text col-md-6">
+                                <div class="text-position">
+                                    <div class="badge-size">
+                                        <span class="badge">LET'S BE HEALTHY</span>
+                                    </div>
+                                    <h1>Improve Your Life Again</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus id quia
+                                        nostrum
+                                        dolorum molestiae, nemo nesciunt itaque eum amet ea!</p>
+                                    <div class="button-position">
+                                        <button type="button" class="btn btn-outline-success">Book Appointment</button>
+                                        <button type="button" class="btn btn-outline">Learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="banner-img col-md-6">
+                        <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
+                            <img src="../img/cover.png" alt="cover-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-0 m-0 bg-section2">
+                    <div class="container">
+                        <div class="row align-items-center text-center ">
+                            <div class="col-lg-3 col-md-6 p-4 text-color">
+                                <h2> <span>420</span>K<sup>+</sup> </h2>
+                                <p>Success treatment</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 p-4 text-color">
+                                <h2><span>420</span>K<sup>+</sup> </h2>
+                                <p>Customer Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section2 -->
+
+
+        <div class="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 offset-lg-1 position" data-aos="flip-up" data-aos-delay="700"
+                        data-aos-duration="1200">
+                        <img class="img-fluid" src="https://via.placeholder.com/400x400" alt="">
+                        <div class="play">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="experience align-items-center justify-content-center col-md-6 offset-lg-2 ">
+                            <i class="fa-regular fa-calendar-days col-md-2"></i>
+                            <div class="experiance-text">
+                                <h3><span>450</span><sup>+</sup></h3>
+                                <p>Customer Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 offset-lg-1 " data-aos="fade-down-left" data-aos-delay="700"
+                        data-aos-duration="1200">
+                        <span class="badge">ABOUT US </span>
+                        <h2>Since 1996 we have treated 12 million patients</h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco. Architecto beatae vitae dicta
+                            sunt
+                            explicabo. Do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <button type="button" class="btn btn-outline-success">Our Services</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section3 -->
+        <section class="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-lg-1 " data-aos="fade-down-right" data-aos-delay="700"
+                        data-aos-duration="1200">
+                        <span class="badge">OUR SERVICES </span>
+                        <h2>Physical Therapy Services</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rerum fugit necessitatibus
+                            deserunt nisi, nam architecto, odio nobis magnam sapiente reprehenderit provident numquam
+                            autem
+                            nesciunt ea ipsum cupiditate libero soluta.
+                        </p>
+                        <ul>
+                            <li><a href="#">Sports Injuries</a></li>
+                            <li><a href="#">Musculoskeletal Injuries</a></li>
+                            <li><a href="#">Back And Neck Pain</a></li>
+                            <li><a href="#">Pregnancy Related</a></li>
+                            <li><a href="#">Arthritis And Osteo-Arthritis</a></li>
+                        </ul>
+                        <div class="button-position">
+                            <button type="button" class="btn btn-outline-success">View All Services</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position" data-aos="flip-up" data-aos-delay="700"
+                        data-aos-duration="1200">
+                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
+                        <div class="play">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="experience align-items-center justify-content-center col-md-6 offset-lg-2">
+                            <i class="las la-users"></i>
+                            <div class="experiance-text">
+                                <h3><span>6250</span>++</h3>
+                                <p>Customer Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section4 -->
+        <section class="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 offset-lg-1">
+                        <span class="badge">OUR SERVICES </span>
+                        <h2>Make quick consultancy with our experts</h2>
+                    </div>
+                    <div class="col-md-7 offset-lg-1">
+                        <div class="form-alignment">
+                            <div class="mb-3 form-position">
+                                <div class="placeholder-style">
+                                    <label for="exampleFormControlInput1" class="form-label">Your name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Your name">
+                                </div>
+                                <div class="placeholder-style">
+                                    <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="placeholder-style">
+                                    <label for="exampleFormControlInput1" class="form-label">Your Phone Number</label>
+                                    <input type="tel" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="mb-3 form-position2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3 placeholder-style">
+                                            <label for="exampleFormControlInput1" class="form-label">Select Therapist</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3 ps-2 placeholder-style">
+                                            <label for="exampleFormControlInput1" class="form-label">I would like to</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-position">
+                            <button type="button" class="btn btn-outline-success">Get Online Consulation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section5 -->
+        <section class="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 offset-lg-1 position " data-aos="fade-left" data-aos-delay="600"
+                        data-aos-duration="1200">
+                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
+                        <div class="play">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="experience align-items-center justify-content-center col-md-6 offset-lg-2">
+                            <div class="star-text text-center">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <div class="experiance-text">
+                                    <div class="text1">
+                                        <h3>10K</h3>
+                                    </div>
+                                    <div class="text2">
+                                        <p>Best Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 offset-lg-1 " data-aos="fade-right" data-aos-delay="600"
+                        data-aos-duration="1200">
+                        <span class="badge">ABOUT US </span>
+                        <h2>Top features for your convenience</h2>
+                        <div class="why-choose">
+                            <div class="logo">
+                                <i class="las la-user-tie"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    Professional Trainer
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-choose">
+                            <div class="logo">
+                                <i class="las la-hand-holding-usd"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    Affordable Prices
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-choose">
+                            <div class="logo">
+                                <i class="las la-handshake"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    Very Friendly Service
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section6 -->
+
+
+        <section class="section6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 offset-lg-1" data-aos="fade-right" data-aos-delay="600"
+                        data-aos-duration="1200">
+                        <span class="badge">OUR PROMISE </span>
+                        <h2>We'll help you to get better and stay better</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rerum fugit necessitatibus
+                            deserunt nisi, nam architecto, odio nobis magnam sapiente reprehenderit provident numquam
+                            autem
+                            nesciunt ea ipsum cupiditate libero soluta.
+                        </p>
+                        <div class="button-position">
+                            <button type="button" class="btn btn-outline-success">Book An Appointment</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 position" data-aos="fade-left" data-aos-delay="600"
+                        data-aos-duration="1200">
+                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section7 -->
+
+        <div class="section7">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <span class="badge">OUR SERVICES </span>
+                        <div class="heading">
+                            <h2>Our psychiatrist</h2>
+                            <a href=""><span>View More
+                                    <span><i class="las la-chevron-right align-items-center"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="multi-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="card">
+
+                                <img src="https://via.placeholder.com/250" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of
+                                        the card's content.</p>
+                                    <hr>
+                                    <i class="lab la-facebook-f"></i>
+                                    <i class="lab la-twitter"></i>
+                                    <i class="lab la-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="card">
+
+                                <img src="https://via.placeholder.com/250" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of
+                                        the card's content.</p>
+                                    <hr>
+                                    <i class="lab la-facebook-f"></i>
+                                    <i class="lab la-twitter"></i>
+                                    <i class="lab la-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="card">
+
+                                <img src="https://via.placeholder.com/250" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of
+                                        the card's content.</p>
+                                    <hr>
+                                    <i class="lab la-facebook-f"></i>
+                                    <i class="lab la-twitter"></i>
+                                    <i class="lab la-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section8 -->
+
+        <div class="section8">
+            <div class="container text-center">
+                <div class="badge-size">
+                    <span class="badge">TESTIMONIAL</span>
+                </div>
+                <h2>What our patients say</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <br> tempor invidunt
+                    ut
+                    labore et dolore magna.</p>
+                <div class=" owl-carousel owl-theme testimonial">
+                    <div class="row item">
+                        <!-- <div class="col-lg-5 col-md-6 offset-lg-1"> -->
+                        <div class="paitent-comment">
+                            <div class="comment-position">
+                                <img src="../img/quotation.png" alt="" class="img-fluid">
+                                <p>"Your company is truly upstanding and is behind its service 100%. I have gotten
+                                    at least
+                                    50 times
+                                    the value from physiotherapy. It's exactly what I've been looking for."</p>
+                                <div class="paitent-detail">
+                                    <div class="paitent-iamge">
+                                        <img src="https://via.placeholder.com/60x60" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="paitent-address">
+                                        <h5>John O'Shea</h5>
+                                        <p>Patient from Canada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <!-- <div class="col-lg-5 col-md-6"> -->
+                        <div class="paitent-comment">
+                            <div class="comment-position">
+                                <img src="../img/quotation.png" alt="" class="img-fluid">
+                                <p>"Your company is truly upstanding and is behind its service 100%. I have gotten
+                                    at least
+                                    50 times
+                                    the value from physiotherapy. It's exactly what I've been looking for."</p>
+                                <div class="paitent-detail">
+                                    <div class="paitent-iamge">
+                                        <img src="https://via.placeholder.com/60x60" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="paitent-address">
+                                        <h5>John O'Shea</h5>
+                                        <p>Patient from Canada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+
+        <footer>
+            <div class="section9">
+                <div class="container">
+                    <div class="row row1">
+                        <div class="col-lg-4 col-md-3 my-paddingR">
+                            <div class="logo">
+                                <img src="../img/MRC_white_logo.png" alt="">
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, conctur adiscing elit. Ut elit tellus, luctus nec ullamcoer
+                                mattis.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-2">
+                            <h5>Comapny</h5>
+                            <ul>
+                                <li><a href=""> About us</a></li>
+                                <li><a href=""> Services</a></li>
+                                <li><a href=""> Resources</a></li>
+                                <li><a href=""> Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href=""> Cord Injuries</a></li>
+                                <li><a href=""> Sports Injuries</a></li>
+                                <li><a href=""> Sprains & Strains</a></li>
+                                <li><a href=""> Low Back Pain</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-3">
+                            <h5>Newsletter</h5>
+                            <p>Dolor sit amet, conctur adiscing elit. Ut elit tellus, luctus nec ullamco.</p>
+                            <div class="footer-botton">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Your email">
+                                <div class="btn btn-outline-success">Subscribe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col-md-4 text-center">
+                            <p>Copyright &copy; 2022 MRC</p>
+                        </div>
+                        <div class="col-md-4 text text-center">
+                            <a href=""> <i class="lab la-facebook-f"></i></a>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                            <a href=""><i class="lab la-instagram"></i></i></a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href=""> Help & Support | Pivacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/owl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
