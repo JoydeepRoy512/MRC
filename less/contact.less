@@ -48,22 +48,28 @@
             flex-direction: row-reverse;
         }
         .logo {
+            a{
 
-            >img {
-                width: 130px;
+                >img {
+                    width: 130px;
+                }
+                @media only screen and(max-width:769px){
+                    display: none;
+                }
             }
-            @media only screen and(max-width:769px){
-                display: none;
-            }
+
 
         }
         .logo-mobile{
             display: none;
-            >img{
-                width: 80px;
-            }
-            @media only screen and(max-width:769px){
-                display: block;
+            a{
+
+                >img{
+                    width: 80px;
+                }
+                @media only screen and(max-width:769px){
+                    display: block;
+                }
             }
         }
 
@@ -732,15 +738,18 @@
             }
 
             .logo {
-                >img {
-                    width: 200px;
-                    margin-bottom: 25px;
+                a{
 
-                    @media only screen and(max-width:768px) {
-                        width: 100px !important;
-                    }
-                    @media only screen and(max-width:426px){
-                        margin-bottom: 0px;
+                    >img {
+                        width: 200px;
+                        margin-bottom: 25px;
+    
+                        @media only screen and(max-width:768px) {
+                            width: 100px !important;
+                        }
+                        @media only screen and(max-width:426px){
+                            margin-bottom: 0px;
+                        }
                     }
                 }
             }

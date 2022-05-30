@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/MRC_blog.css">
+    <title>MRC</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="../img/MRC_white_logo.png" alt=""></a>
+            </div>
+            <div class="logo-mobile">
+                <a href=""><img src="../img/MRC_logo.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resource.html">Resources</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center ml-auto" id="exampleModalLabel">Book Appointmnet</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+
+                        <div class="form-group1">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your name*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="10"
+                                placeholder="Phone number*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="email" class="form-control" id="exampleFormControlInput3"
+                                placeholder="Your e-mail*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="3"
+                                placeholder="Age">
+                        </div>
+                        <div class="form-group1">
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="How do we help you ?" rows="3" cols="5"></textarea>
+                        </div>
+                        <button class="btn"> SUBMIT </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overflow-hidden">
+        <!-- banner -->
+        <!-- <section class="banner-bg overflow-hidden">
+            <div class="container-fluid p-0 m-0">
+                <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
+                    <div class="container">
+                        <div class="banner-holder row text-align-center">
+                            <div class="banner-text col-md-6">
+                                <div class="text-position">
+                                    <h1>Established Since 1996</h1>
+                                    <div class="button-position">
+                                        <button type="button" class="btn btn-outline-success">Book Appointment</button>
+                                        <button type="button" class="btn btn-outline">Learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="banner-img col-md-6">
+                        <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
+                            <img src="../img/about.png" alt="cover-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-0 m-0 bg-section2">
+                    <div class="container">
+                        <h5>Trusted by:</h5>
+                        <div class="row align-items-center text-center ">
+                            <div class="col-lg-2 col-md-4 p-4 text-color">
+                                <img src="../img/logoipsum-01.png" alt="">
+                            </div>
+                            <div class="col-lg-2 col-md-4 p-4 text-color">
+                                <img src="../img/logoipsum-02.png" alt="">
+                            </div>
+                            <div class="col-lg-2 col-md-4 p-4 text-color">
+                                <img src="../img/logoipsum-03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- section2 -->
+        <section class="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="blog">
+                            <h2>
+                                Why Did We Start ?
+                            </h2>
+                            <p class="blog-details">
+                                Last updated on
+                                <time itemprop="dateModified" datetime="2022-05-11T09:26:13-04:00">May 11th, 2022</time>
+                                by
+                                <a href="index.html">MRC</a>
+                            </p>
+                            <hr>
+                            <p>
+                                20 years back rehabilitation in India was meant only for
+                                Acholcalic or Drug addict patients. The concept of neuroortho rehab was very poor in eastern
+                                India, few indoor
+                                integrated rehab center was in CMC Vellore, NIMHANS,
+                                Bangalore, NIOH Kolkata only. Though this medical science
+                                was very popular in the USA and other few countries, this
+                                new concept was highly neglected by the doctors of our
+                                state and in India.
+                            </p>
+                            <p>
+                                Dr. Ghatak a young Physical Medicine and Rehabilitation
+                                expert with the sharp vision of realizing the increasing
+                                enormity of the problems faced by a person inflicted
+                                with stroke, brain or spinal
+                                injuries, or early life problems
+                                like Cerebral Palsy decided
+                                to make a difference.
+                            </p>
+                            <div class="image-outer">
+                                <div class="image">
+                                    <img src="../img/Why-start.png" alt="Doctor-Image">
+                                </div>
+                            </div>
+                            <h5>
+                                With His Iron Determination,
+                                He Took up The Challenge of Touching The Lives
+                                of Such Patients and Bring Back The Smile on
+                                Their Suffering Faces.
+                            </h5>
+                            <p>
+                                <strong>But it was not an easy start!</strong>
+                            </p>
+                            <p>
+                                Dr. Ghatak was almost penniless and had to let go off various
+                                lucrative opportunities and work hard to achieve his goal. After
+                                months of struggle and hard work, he finally achieved his
+                                dream and started a full-fledged indoor rehabilitation center
+                                on this day(13th Sept) 20years ago. During its initial years MRC
+                                had to fight a lot to prove itself by proving the efficacy of such
+                                rehab treatment by showing huge improvement of almost
+                                every patient who was told as "no more can be done" and they
+                                had to spend the rest of their life at a bedridden status. MRC
+                                was a ray of sunshine for such patients. Subsequently it
+                                became a boon for patients with disability never thought that
+                                they would be able to lead a normal life or come out of bed.
+                            </p>
+                            <div class="end-line">
+                                <h6>
+                                    20 DEDICATED YEARS OF FIGHTING DISABILITY
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="treatment">
+                            <div class="image">
+                                <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="">
+                            </div>
+                            <div class="description">
+                                <span class="badge">LOWER LEG </span>
+                                <h2>
+                                    The Benefits of a Reformer Pilates Routine
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum…
+                                </p>
+                                <div class="heading">
+                                    <a href=""><span>Learn More
+                                            <span><i class="las la-chevron-right align-items-center"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="treatment">
+                            <div class="image">
+                                <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="">
+                            </div>
+                            <div class="description">
+                                <span class="badge">LOWER LEG </span>
+                                <h2>
+                                    The Benefits of a Reformer Pilates Routine
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum…
+                                </p>
+                                <div class="heading">
+                                    <a href=""><span>Learn More
+                                            <span><i class="las la-chevron-right align-items-center"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="section9">
+                <div class="container">
+                    <div class="row row1">
+                        <div class="col-lg-4 col-md-3 my-paddingR">
+                            <div class="logo">
+                                <img src="../img/MRC_logo.png" alt="">
+                            </div>
+                            <p>
+                                We are the pioneer of neuro-ortho
+                                rehabilitation across eastern India.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-5 offset-1 offset-md-0">
+                            <h5>Comapny</h5>
+                            <ul>
+                                <li><a href=""> About us</a></li>
+                                <li><a href=""> Services</a></li>
+                                <li><a href=""> Resources</a></li>
+                                <li><a href=""> Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href=""> Cord Injuries</a></li>
+                                <li><a href=""> Sports Injuries</a></li>
+                                <li><a href=""> Sprains & Strains</a></li>
+                                <li><a href=""> Low Back Pain</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-3">
+                            <h5>20 Didicated Years Of Fighting Disability</h5>
+                            <p>Without an effective & dedicated
+                                team, such a huge achievement
+                                was not possible. </p>
+                            <div class="footer-botton">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Your email">
+                                <div class="btn btn-outline-success">Subscribe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col-md-4 text-center">
+                            <p>Copyright &copy; 2022 MRC</p>
+                        </div>
+                        <div class="col-md-4 text text-center">
+                            <a href=""> <i class="lab la-facebook-f"></i></a>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                            <a href=""><i class="lab la-instagram"></i></i></a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href=""> Help & Support | Pivacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/owl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

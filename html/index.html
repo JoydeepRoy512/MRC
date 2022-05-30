@@ -33,10 +33,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <div class="logo">
-                <img src="../img/MRC_white_logo.png" alt="">
+                <a href="index.html"><img src="../img/MRC_white_logo.png" alt=""></a>
             </div>
             <div class="logo-mobile">
-                <img src="../img/MRC_logo.png" alt="">
+               <a href="index.html"><img src="../img/MRC_logo.png" alt=""></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -143,8 +143,9 @@
                                         nostrum
                                         dolorum molestiae, nemo nesciunt itaque eum amet ea!</p> -->
                                     <div class="button-position">
-                                        <button type="button" class="btn btn-outline-success">Book Appointment</button>
-                                        <button type="button" class="btn btn-outline">Learn more</button>
+                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Appointment</button>
+                                        <button type="button" class="btn btn-outline" onclick="window.location.href='about.html';">Learn more</button>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +156,7 @@
                 <div class="row ">
                     <div class="banner-img col-md-6">
                         <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
-                            <img src="../img/cover.png" alt="cover-image">
+                            <img src="../img/Bg-image-main.png" alt="cover-image">
                         </div>
                     </div>
                 </div>
@@ -225,7 +226,7 @@
                             to make a difference...
                         </p>
                         <button type="button" class="btn btn-outline-success"
-                            onclick="window.location.href='about.html'">Read More</button>
+                            onclick="window.location.href='MRC_blog.html'">Read More</button>
                     </div>
                 </div>
             </div>
@@ -238,19 +239,18 @@
                     <div class="col-md-6 col-lg-6" data-aos="fade-down-right" data-aos-delay="300"
                         data-aos-duration="1200">
                         <span class="badge">OUR SERVICES </span>
-                        <h2>Physical Therapy Services</h2>
+                        <h2>Services Offered</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rerum fugit necessitatibus
-                            deserunt nisi, nam architecto, odio nobis magnam sapiente reprehenderit provident numquam
-                            autem
-                            nesciunt ea ipsum cupiditate libero soluta.
+                            Specialized trained staffing for proper positioning, posture care, bedsore care, Urinary
+                            measurement and care, dysphagia management, bedside therapies, vocational interventions, and
+                            practicing the tasks throughout the day - is only available in an indoor setup. A consultant
+                            rehab doctor guides all these.
                         </p>
                         <ul>
-                            <li><a href="#">Sports Injuries</a></li>
-                            <li><a href="#">Musculoskeletal Injuries</a></li>
-                            <li><a href="#">Back And Neck Pain</a></li>
-                            <li><a href="#">Pregnancy Related</a></li>
-                            <li><a href="#">Arthritis And Osteo-Arthritis</a></li>
+                            <li><a href="#">OPD Consultation by PMR Doctors</a></li>
+                            <li><a href="#">Double Session Rehab</a></li>
+                            <li><a href="#">Inpatient Rehab</a></li>
+                            <li><a href="#">Board discussion</a></li>
                         </ul>
                         <div class="button-position">
                             <button type="button" class="btn btn-outline-success">View All Services</button>
@@ -258,9 +258,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6 position" data-aos="flip-up" data-aos-delay="300"
                         data-aos-duration="1200">
-                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
+                        
+                            <div class="image">
+                                <img class="img-fluid" src="../img/Image1.jpg" alt="">
+                            </div>
+                        
                         <div class="play">
-                            <i class="fa-regular fa-circle-play"></i>
+                            <!-- <i class="fa-regular fa-circle-play"></i> -->
                         </div>
                         <div class="experience align-items-center justify-content-center col-md-6 offset-lg-2">
                             <i class="las la-users"></i>
@@ -299,6 +303,92 @@
                         <img class="img-fluid" src="../img/free.png" alt="">
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- section3 new added -->
+
+        <section class="section3-new">
+            <div class="container">
+                <div class="row">
+                    <div class="badge-position">
+                        <span class="badge">CONDITIONS</span>
+                    </div>
+                    <h2>Conditions We Treat</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-6" data-aos="fade-down-right" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <ul>
+                            <li><a href="#">Hemiplegia</a></li>
+                            <li><a href="#">Any other physical and psychological disability</a></li>
+                            <li><a href="#">Post brain injury Disabilitiesh</a></li>
+                            <li><a href="#">Old age disability</a></li>
+                            <li><a href="#">Amputation</a></li>
+                            <li><a href="#">Post THR & TKR rehab</a></li>
+                            <li><a href="#">Psychological & behavioral problems</a></li>
+                            <li><a href="#">Cognitive deficits</a></li>
+                            <li><a href="#">Developmental disorders</a></li>
+                            <li><a href="#">Delayed milestones</a></li>
+                            <li><a href="#">Cerebral Palsy</a></li>
+                            <li><a href="#">Paraplegia</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6" data-aos="fade-down-right" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <ul>
+                            <li><a href="#">Myopathies</a></li>
+                            <li><a href="#">Transverse Myelitis</a></li>
+                            <li><a href="#">Post-surgical stiffness & pain</a></li>
+                            <li><a href="#">Muscle & Joint Contracture</a></li>
+                            <li><a href="#">AIDP/CIDP</a></li>
+                            <li><a href="#">Carpal Tunnel Syndrome</a></li>
+                            <li><a href="#">Tendon & Ligament tear</a></li>
+                            <li><a href="#">Muscle & Joint injury</a></li>
+                            <li><a href="#">LMN Paralysis</a></li>
+                            <li><a href="#">Facial Palsy</a></li>
+                            <li><a href="#">Soft tissue rheumatism</a></li>
+                            <li><a href="#">Double hemiplegia</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6" data-aos="fade-down-right" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <ul>
+                            <li><a href="#">Neoplastic spine</a></li>
+                            <li><a href="#">Osteoporosis</a></li>
+                            <li><a href="#">Degenerative Spine</a></li>
+                            <li><a href="#">Dependency due to poor confidence</a></li>
+                            <li><a href="#">Scoliosis</a></li>
+                            <li><a href="#">Poorly Conditioned neuro-muscular status</a></li>
+                            <li><a href="#">Functional decline</a></li>
+                            <li><a href="#">Canal Stenosis</a></li>
+                            <li><a href="#">Disc herniation</a></li>
+                            <li><a href="#">AS</a></li>
+                            <li><a href="#">Sensory loss</a></li>
+                            <li><a href="#">RA & Other Rheumatological Disorder</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6" data-aos="fade-down-right" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <ul>
+                            <li><a href="#">Gait Instability</a></li>
+                            <li><a href="#">Dystonia</a></li>
+                            <li><a href="#">Spastic Contractures</a></li>
+                            <li><a href="#">Spastic Paresis</a></li>
+                            <li><a href="#">Heel pain</a></li>
+                            <li><a href="#">Bursitis, Fibromyositis</a></li>
+                            <li><a href="#">Neck pain</a></li>
+                            <li><a href="#">Frozen Shoulder</a></li>
+                            <li><a href="#">Low Back Pain</a></li>
+                            <li><a href="#">Aphasia/Dysphasia</a></li>
+                            <li><a href="#">Quadriplegia</a></li>
+                            <li><a href="#">OA</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -372,10 +462,14 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-6 position " data-aos="fade-left" data-aos-delay="300"
                         data-aos-duration="1200">
-                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
-                        <div class="play">
-                            <i class="fa-regular fa-circle-play"></i>
+                        <div class="image-holder">
+                            <div class="image">
+                                <img class="img-fluid" src="../img/WhatsApp Image 2022-05-27 at 4.59.52 PM.jpeg" alt="">
+                            </div>
                         </div>
+                        <!-- <div class="play">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div> -->
                         <div class="experience align-items-center justify-content-center col-md-6 offset-lg-2">
                             <div class="star-text text-center">
                                 <i class="las la-star"></i>
@@ -394,49 +488,120 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-5 offset-lg-1 " data-aos="fade-right" data-aos-delay="300"
-                        data-aos-duration="1200">
-                        <span class="badge">ABOUT US </span>
-                        <h2>Top Features For Your Convenience</h2>
-                        <div class="why-choose">
-                            <div class="logo">
-                                <i class="las la-user-tie"></i>
+                    <div class="col-md-6 col-lg-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1200">
+                        <span class="badge">SPECIALITY</span>
+                        <h2>Top Speciality Units For Your Convenience</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Vertigo Management - Investigation
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            CP and Paediatric Rehabilitation
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            General Neuro Rehab Clinic
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Parkinsonism & Movement Disorder Unit
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text">
-                                <h3>
-                                    Professional Trainer
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                </p>
+                            <div class="col-md-6">
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Spinal Rehab
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Stroke Rehab
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Spasticity Clinic
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="why-choose">
+                                    <div class="logo">
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>
+                                            Pain Clinic
+                                        </h3>
+                                        <!-- <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        </p> -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="why-choose">
-                            <div class="logo">
-                                <i class="las la-hand-holding-usd"></i>
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Affordable Prices
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                </p>
-                            </div>
-                        </div>
-                        <div class="why-choose">
-                            <div class="logo">
-                                <i class="las la-handshake"></i>
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Very Friendly Service
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                </p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -450,20 +615,18 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1200">
                         <span class="badge">OUR PROMISE </span>
-                        <h2>We'll Help You To Get Better And Stay Better</h2>
+                        <h2>A Ray of Hope to Regain Mobility & Activity</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rerum fugit necessitatibus
-                            deserunt nisi, nam architecto, odio nobis magnam sapiente reprehenderit provident numquam
-                            autem
-                            nesciunt ea ipsum cupiditate libero soluta.
+                            Our experience shows that the patients staying in the hospital share their joys and sorrows with the same feelings of disability one another - and inspired by others' improvement and a positive motivational force always hastens the rehab outcome.
                         </p>
                         <div class="button-position">
-                            <button type="button" class="btn btn-outline-success">Book An Appointment</button>
+                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Book An Appointment</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 position" data-aos="fade-left" data-aos-delay="300"
                         data-aos-duration="1200">
-                        <img class="img-fluid" src="https://via.placeholder.com/350x450" alt="">
+                        <img class="img-fluid" src="../img/WhatsApp Image 2022-05-27 at 4.59.53 PM (1).jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -617,7 +780,7 @@
                     <div class="row row1">
                         <div class="col-lg-4 col-md-3 my-paddingR">
                             <div class="logo">
-                                <img src="../img/MRC_logo.png" alt="">
+                                <a href=""><img src="../img/MRC_logo.png" alt=""></a>
                             </div>
                             <p>
                                 We are the pioneer of neuro-ortho
@@ -627,19 +790,19 @@
                         <div class="col-lg-2 col-md-3 col-5 offset-1 offset-md-0">
                             <h5>Comapny</h5>
                             <ul>
-                                <li><a href=""> About us</a></li>
-                                <li><a href=""> Services</a></li>
-                                <li><a href=""> Resources</a></li>
-                                <li><a href=""> Contact Us</a></li>
+                                <li><a href="about.html"> About us</a></li>
+                                <li><a href="services.html"> Services</a></li>
+                                <li><a href="resource.html"> Resources</a></li>
+                                <li><a href="contact.html"> Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-3 col-4">
-                            <h5>Services</h5>
+                            <h5>Popular Services</h5>
                             <ul>
-                                <li><a href=""> Cord Injuries</a></li>
-                                <li><a href=""> Sports Injuries</a></li>
-                                <li><a href=""> Sprains & Strains</a></li>
-                                <li><a href=""> Low Back Pain</a></li>
+                                <li><a href="services.html"> Cord Injuries</a></li>
+                                <li><a href="services.html"> Sports Injuries</a></li>
+                                <li><a href="services.html"> Sprains & Strains</a></li>
+                                <li><a href="services.html"> Low Back Pain</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 col-md-3">

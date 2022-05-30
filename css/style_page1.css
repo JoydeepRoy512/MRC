@@ -81,7 +81,7 @@
             flex-direction: row-reverse;
   }
 }
-.navbar .container .logo > img {
+.navbar .container .logo a > img {
   width: 130px;
 }
 @media only screen and (max-width: 769px) {
@@ -92,7 +92,7 @@
 .navbar .container .logo-mobile {
   display: none;
 }
-.navbar .container .logo-mobile > img {
+.navbar .container .logo-mobile a > img {
   width: 80px;
 }
 @media only screen and (max-width: 769px) {
@@ -256,7 +256,7 @@
 }
 .banner-bg .container-fluid .banner-holder .banner-text .text-position > h1 {
   margin: 0px 0px 25px 0px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
@@ -277,6 +277,9 @@
   color: white;
   font-family: 'Kumbh Sans', sans-serif;
 }
+.banner-bg .container-fluid .banner-holder .banner-text .text-position .button-position .btn-outline-success:hover {
+  background-color: #eba04c;
+}
 @media only screen and (max-width: 426px) {
   .banner-bg .container-fluid .banner-holder .banner-text .text-position .button-position .btn-outline-success {
     width: 80%;
@@ -287,6 +290,9 @@
 .banner-bg .container-fluid .banner-holder .banner-text .text-position .button-position .btn-outline {
   border-color: #fff;
   color: #fff;
+}
+.banner-bg .container-fluid .banner-holder .banner-text .text-position .button-position .btn-outline:hover {
+  background-color: #eba04c;
 }
 @media only screen and (max-width: 426px) {
   .banner-bg .container-fluid .banner-holder .banner-text .text-position .button-position .btn-outline {
@@ -308,15 +314,20 @@
 .banner-bg .row .banner-img {
   position: absolute;
   bottom: 0;
-  right: 100px;
+  right: 60px;
   z-index: 1;
 }
 .banner-bg .row .banner-img img {
-  width: 55vw;
+  width: 70vw;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .banner-bg .row .banner-img img {
-    width: 100% !important;
+    width: 65vw !important;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .banner-bg .row .banner-img img {
+    width: 90vw !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -325,9 +336,20 @@
     right: 0px;
   }
 }
+@media only screen and (max-width: 426px) {
+  .banner-bg .row .banner-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 30px;
+  }
+}
 .banner-bg .bg-section2 {
   background-color: #0E0B47;
-  background-image: url(/img/cover2.png);
+  background-image: url(../img/cover2.png);
 }
 @media only screen and (max-width: 426px) {
   .banner-bg .bg-section2 .col-md-6 {
@@ -492,6 +514,9 @@
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 15px;
 }
+.section2 .col-lg-6 .btn-outline-success:hover {
+  background-color: #eba04c;
+}
 .section2 .col-lg-6 h2 {
   font-family: 'Kumbh Sans', sans-serif;
   color: #0E0B47;
@@ -520,7 +545,7 @@
 }
 .section3 {
   background-color: #6282E7;
-  background-image: url(/img/cover2.png);
+  background-image: url(../img/cover2.png);
   margin-top: 100px;
   padding: 60px 0px;
 }
@@ -604,6 +629,9 @@
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 15px;
 }
+.section3 .col-md-6 .button-position .btn-outline-success:hover {
+  background-color: #eba04c;
+}
 @media only screen and (max-width: 426px) {
   .section3 .col-md-6 .button-position {
     margin-bottom: 50px;
@@ -631,7 +659,15 @@
             justify-content: center;
   }
 }
-.section3 .position > img {
+.section3 .position .image {
+  width: 100%;
+  height: 500px;
+}
+.section3 .position .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .section3 .position .play {
@@ -662,11 +698,12 @@
   padding: 10px;
   position: absolute;
   bottom: -20px;
-  right: 53px;
+  left: 70px;
 }
 @media only screen and (max-width: 768px) {
   .section3 .position .experience {
-    left: 92px;
+    left: 75px;
+    width: 60%;
   }
 }
 .section3 .position .experience .experiance-text {
@@ -746,6 +783,85 @@
 .section6-new .position > img {
   border-radius: 20px;
 }
+.section3-new {
+  background-color: #6282E7;
+  background-image: url(../img/cover2.png);
+  padding: 60px 0px;
+}
+.section3-new .badge {
+  background-color: #7c97eb;
+  padding: 10px 25px;
+  margin: 30px 0px 10px 0px;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .section3-new .badge {
+    margin-top: 0px;
+  }
+}
+.section3-new h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .section3-new h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .section3-new h2 {
+    font-size: 25px;
+  }
+}
+.section3-new ul {
+  padding-left: 0px;
+}
+@media only screen and (max-width: 462px) {
+  .section3-new ul {
+    text-align: left;
+  }
+}
+.section3-new ul li {
+  list-style: none;
+  margin: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section3-new ul li::before {
+  content: '\3e \3e';
+  font-family: "FontAwesome";
+  font-size: 8px;
+  color: #eba04c;
+  margin-right: 8px;
+  margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .section3-new ul li {
+    margin: 3px 0px;
+  }
+}
+.section3-new ul li a {
+  text-decoration: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .section3-new ul li a {
+    font-size: 10px;
+  }
+}
 .section4 {
   margin: 60px 0px;
   padding: 20px 0px;
@@ -762,6 +878,11 @@
   font-size: 40px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 769px) {
+  .section4 h2 {
+    font-size: 35px;
+  }
+}
 .section4 .badge {
   color: #ffa842;
   background-color: #ffa84224;
@@ -776,6 +897,9 @@
   color: white;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 15px;
+}
+.section4 .button-position .btn-outline-success:hover {
+  background-color: #eba04c;
 }
 .section4 .form-alignment {
   display: -webkit-box;
@@ -936,7 +1060,18 @@
 .section5 .position {
   position: relative;
 }
-.section5 .position > img {
+.section5 .position .image-holder .image {
+  height: 500px;
+  width: 70%;
+}
+@media only screen and (max-width: 769px) {
+  .section5 .position .image-holder .image {
+    width: 100%;
+  }
+}
+.section5 .position .image-holder .image img {
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
 }
 .section5 .position .play {
@@ -967,16 +1102,17 @@
   padding: 10px;
   position: absolute;
   bottom: -40px;
-  left: -52px;
+  left: -40px;
 }
 @media only screen and (max-width: 768px) {
   .section5 .position .experience {
-    left: 80px;
+    left: 70px;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 426px) {
   .section5 .position .experience {
-    left: 100px;
+    left: 80px;
   }
 }
 .section5 .position .experience .star-text .experiance-text {
@@ -1026,7 +1162,7 @@
 .section5 .col-md-6 > h2 {
   font-family: 'Kumbh Sans', sans-serif;
   color: #0E0B47;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   margin: 10px 0px 20px 0px;
 }
@@ -1039,10 +1175,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 426px) {
   .section5 .col-md-6 .why-choose {
@@ -1069,30 +1208,30 @@
   }
 }
 .section5 .col-md-6 .why-choose .logo i {
-  font-size: 40px;
+  font-size: 20px;
   background-color: #dfcebbc4;
   color: #e99535e0;
   border-radius: 10px;
+  font-weight: 900;
   border: 2px soloid #ffffff2b;
-  padding: 5px;
+  padding: 2px;
 }
 @media only screen and (max-width: 768px) {
   .section5 .col-md-6 .why-choose .logo i {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .section5 .col-md-6 .why-choose .text {
-  margin: auto;
   padding: 0px 10px;
 }
 .section5 .col-md-6 .why-choose .text > h3 {
   font-size: 20px;
   margin-bottom: 5px;
-  color: #0E0B47;
+  color: #0e0b4779;
 }
 @media only screen and (max-width: 768px) {
   .section5 .col-md-6 .why-choose .text > h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .section6 {
@@ -1145,6 +1284,9 @@
   color: white;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 15px;
+}
+.section6 .col-md-6 .button-position .btn-outline-success:hover {
+  background-color: #eba04c;
 }
 @media only screen and (max-width: 426px) {
   .section6 .col-md-6 .button-position {
@@ -1313,6 +1455,11 @@
   font-size: 50px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 769px) {
+  .section8 .container h2 {
+    font-size: 40px;
+  }
+}
 @media only screen and (max-width: 426px) {
   .section8 .container h2 {
     font-size: 25px;
@@ -1428,17 +1575,17 @@
   margin-bottom: 25px;
   font-family: 'Kumbh Sans', sans-serif;
 }
-.section9 .row1 .col-lg-4 .logo > img {
+.section9 .row1 .col-lg-4 .logo a > img {
   width: 200px;
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 768px) {
-  .section9 .row1 .col-lg-4 .logo > img {
+  .section9 .row1 .col-lg-4 .logo a > img {
     width: 100px !important;
   }
 }
 @media only screen and (max-width: 426px) {
-  .section9 .row1 .col-lg-4 .logo > img {
+  .section9 .row1 .col-lg-4 .logo a > img {
     margin-bottom: 0px;
   }
 }
