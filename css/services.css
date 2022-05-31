@@ -724,13 +724,87 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.section5 .container .video-holder {
+  height: 500px;
+  width: 450px;
+}
+.section5 .container .video-holder .video {
+  height: 100%;
+  width: 100%;
+}
+.section5 .container .video-holder .video iframe {
+  height: 100%;
+  width: 100%;
+}
+.section5 .container .position {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+@media only screen and (max-width: 426px) {
+  .section5 .container .position {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.section5 .container .position .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6282E7;
+  width: 55%;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 7px #eef1f5;
+          box-shadow: 5px 7px #eef1f5;
+  padding: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .section5 .container .position .experience {
+    left: 75px;
+    width: 60%;
+  }
+}
+.section5 .container .position .experience .experiance-text {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.section5 .container .position .experience .experiance-text > h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+.section5 .container .position .experience .experiance-text > p {
+  margin: 0px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+  text-align: left;
+  font-weight: 200;
+}
+.section5 .container .position .experience i {
+  background: #eba04c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 60px;
+  margin-right: 20px;
+}
 .section5 .container .badge-size .badge {
   color: #ffa842;
   background-color: #ffa84224;
   padding: 10px 25px;
   margin: 25px 0px 10px 0px;
   font-family: 'Kumbh Sans', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 426px) {
   .section5 .container .badge-size .badge {
@@ -741,7 +815,7 @@
   font-family: 'Kumbh Sans', sans-serif;
   color: #0E0B47;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 426px) {
