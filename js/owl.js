@@ -10,6 +10,7 @@ $(document).ready(function () {
             autoplay: true,
             autoplayTimeout:3000,
             dots:true,
+            autoplayHoverPause:true,
             responsive: {
                 0: {
                     items: 1,
@@ -20,7 +21,7 @@ $(document).ready(function () {
                     nav: false
                 },
                 1000: {
-                    items: 2,
+                    items: 1,
                     nav: true,
                     loop: true,
                     
