@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/trust.css">
+    <title>MRC</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/MRC_white_logo.png" alt=""></a>
+            </div>
+            <div class="logo-mobile">
+               <a href="index.html"><img src="../img/MRC_logo.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resource.html">Blog & News</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="trust.html">Trust</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page" href="#" id="navbarDropdown" role="button"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu pages" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Our Therapist</a></li>
+                            <li><a class="dropdown-item" href="#">Therapist Details</a></li>
+                            <li><a class="dropdown-item" href="#">Pricing</a></li>
+                            <li><a class="dropdown-item" href="#">Book Appointment</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <!-- <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Book Appointment</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center ml-auto" id="exampleModalLabel">Book Appointmnet</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+
+                        <div class="form-group1">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your name*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="10"
+                                placeholder="Phone number*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="email" class="form-control" id="exampleFormControlInput3"
+                                placeholder="Your e-mail*">
+                        </div>
+                        <div class="form-group1">
+                            <input type="tel" class="form-control" id="exampleFormControlInput2" maxlength="3"
+                                placeholder="Age">
+                        </div>
+                        <div class="form-group1">
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="How do we help you ?" rows="3" cols="5"></textarea>
+                        </div>
+                        <button class="btn"> SUBMIT </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overflow-hidden">
+        <!-- banner -->
+        <section class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="image-holder">
+                            <div class="image"><img src="../trust-image/7a.png" class="img-fluid" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-holder">
+                            <div class="image"><img src="../trust-image/7b.png" class="img-fluid" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-holder">
+                            <div class="image"><img src="../trust-image/7c-new.png" class="img-fluid" alt="" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section2 -->
+        <section class="section2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="image-holder">
+                        <div class="image"><img src="../trust-image/8a.png" class="img-fluid" alt="" ></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-holder">
+                        <div class="image"><img src="../trust-image/8b.png" class="img-fluid" alt="" ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section3 -->
+        <section class="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1200">
+                        <span class="badge">FREE </span>
+                        <h2>Free Treatment</h2>
+                        <p>
+                            On the completion of its 20th
+                            year, MRC will take responsibility
+                            for 20 people from very needful
+                            families to get our rehab service
+                            free of cost. We will present them
+                            with a card mentioning the details
+                            on our foundation day.
+                        </p>
+                        <!-- <div class="button-position">
+                            <button type="button" class="btn btn-outline-success">Book An Appointment</button>
+                        </div> -->
+                    </div>
+                    <div class="col-md-6 col-lg-6 position" data-aos="fade-left" data-aos-delay="300"
+                        data-aos-duration="1200">
+                        <img class="img-fluid" src="../img/free.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- section4 -->
+       <section class="section4">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-md-6">
+                    <div class="image-holder">
+                        <div class="image"><img src="../trust-image/1a.png" class="img-fluid" alt="" ></div>
+                    </div>
+                   </div>
+                   <div class="col-md-6">
+                    <div class="image-holder">
+                        <div class="image"><img src="../trust-image/1b.png" class="img-fluid" alt="" ></div>
+                    </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+        <!-- section5 -->
+        <section class="section5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/2a.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/2b.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section6 -->
+        <section class="section6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/3a.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/3b.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section7 -->
+        <section class="section7">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/4a.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/4b.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section8 -->
+        <section class="section8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/5a.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/5b.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section9 -->
+        <section class="section9">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/6a.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="image-holder">
+                         <div class="image"><img src="../trust-image/6b.png" class="img-fluid" alt="" ></div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="section10">
+                <div class="container">
+                    <div class="row row1">
+                        <div class="col-lg-4 col-md-3 my-paddingR">
+                            <div class="logo">
+                                <a href=""><img src="../img/MRC_logo.png" alt=""></a>
+                            </div>
+                            <p>
+                                We are the pioneer of neuro-ortho
+                                rehabilitation across eastern India.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-5 offset-1 offset-md-0">
+                            <h5>Comapny</h5>
+                            <ul>
+                                <li><a href="about.html"> About us</a></li>
+                                <li><a href="services.html"> Services</a></li>
+                                <li><a href="resource.html"> Resources</a></li>
+                                <li><a href="contact.html"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <h5>Popular Services</h5>
+                            <ul>
+                                <li><a href="services.html">Stroke Rehab Services</a></li>
+                                <li><a href="services.html">Spinal Rehab Services</a></li>
+                                <li><a href="services.html">Brain & Spinal Cord Rehab Services</a></li>
+                                <li><a href="services.html">Pain Management</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-3">
+                            <h5>21 Didicated Years Of Fighting Disability</h5>
+                            <p>Without an effective & dedicated
+                                team, such a huge achievement
+                                was not possible. </p>
+                            <div class="footer-botton">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Your email">
+                                <div class="btn btn-outline-success">Subscribe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col-md-4 text-center">
+                            <p>Copyright &copy; 2022 MRC</p>
+                        </div>
+                        <div class="col-md-4 text text-center">
+                            <a href=""> <i class="lab la-facebook-f"></i></a>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                            <a href=""><i class="lab la-instagram"></i></i></a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href=""> Help & Support | Pivacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/owl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player1;
+
+        function onYouTubeIframeAPIReady() {
+            player1 = new YT.Player('playerPhipps', {
+                videoId: '7D2W9OR2cFg',
+                events: {
+                    onReady: 'onPlayerReady',
+                    onStateChange: 'onPlayerStateChange'
+                },
+                playerVars: {
+                    'controls': '1',
+                    'showinfo': '0',
+                    'playlist': '7D2W9OR2cFg',
+                    'loop': '1',
+                    'modestbranding': '1',
+                    'autohide': '1',
+                    'rel': '0',
+                    'ytp-pause-overlay': '0', //doesn't work
+                    'ecver': '2' //doesn't work
+                }
+            });
+
+            //Hover play - works great!
+            $('.playerLocation').on('mouseover', function () {
+                var thisPlayer = $(this).attr('id');
+                switch (thisPlayer) {
+                    case 'playerPhipps':
+                        player1.playVideo();
+                        break;
+
+                }
+                //player.playVideo();
+
+            });
+
+            $('.playerLocation').on('mouseout', function () {
+                //player.stopVideo();
+                var thisPlayer = $(this).attr('id');
+                switch (thisPlayer) {
+                    case 'playerPhipps':
+                        player1.stopVideo();
+                        break;
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

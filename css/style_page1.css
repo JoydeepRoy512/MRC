@@ -543,10 +543,88 @@
     text-align: justify;
   }
 }
+.home-rehab {
+  background-color: #6282E7;
+  background-image: url(/img/cover2.png);
+  padding: 60px 0px;
+  margin-top: 100px;
+}
+@media only screen and (max-width: 426px) {
+  .home-rehab .col-md-6 {
+    text-align: center;
+  }
+}
+.home-rehab .col-md-6 .badge {
+  background-color: #ffffff2b;
+  padding: 10px 25px;
+  margin: 30px 0px 10px 0px;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .home-rehab .col-md-6 .badge {
+    margin-top: 0px;
+  }
+}
+.home-rehab .col-md-6 h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+@media only screen and (max-width: 426px) {
+  .home-rehab .col-md-6 h2 {
+    font-size: 25px;
+  }
+}
+.home-rehab .col-md-6 p {
+  color: #fff;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 426px) {
+  .home-rehab .col-md-6 p {
+    text-align: justify;
+  }
+}
+.home-rehab .col-md-6 .button-position .btn-outline-success {
+  border-color: #ffa842;
+  background-color: #ffa842;
+  color: white;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 15px;
+}
+.home-rehab .col-md-6 .button-position .btn-outline-success:hover {
+  background-color: #eba04c;
+}
+@media only screen and (max-width: 426px) {
+  .home-rehab .col-md-6 .button-position {
+    margin-bottom: 30px;
+  }
+}
+.home-rehab .position {
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 426px) {
+  .home-rehab .position {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.home-rehab .position > img {
+  border-radius: 20px;
+}
 .section3 {
   background-color: #6282E7;
   background-image: url(../img/cover2.png);
-  margin-top: 100px;
   padding: 60px 0px;
 }
 @media only screen and (max-width: 426px) {
@@ -728,61 +806,6 @@
   border-radius: 5px;
   font-size: 40px;
 }
-.section6-new {
-  background-color: #f7f3f0;
-  padding: 60px 0px;
-}
-@media only screen and (max-width: 426px) {
-  .section6-new .col-md-6 {
-    text-align: center;
-  }
-}
-.section6-new .col-md-6 .badge {
-  color: #ffa842;
-  background-color: #ffa84224;
-  padding: 10px 25px;
-  margin: 0px 0px 5px 0px;
-  font-family: 'Kumbh Sans', sans-serif;
-}
-@media only screen and (max-width: 426px) {
-  .section6-new .col-md-6 .badge {
-    margin-top: 20px;
-  }
-}
-.section6-new .col-md-6 h2 {
-  color: #0E0B47;
-  font-size: 40px;
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-family: 'Kumbh Sans', sans-serif;
-}
-@media only screen and (max-width: 426px) {
-  .section6-new .col-md-6 h2 {
-    font-size: 25px;
-  }
-}
-.section6-new .col-md-6 p {
-  color: #0E0B47;
-  font-family: 'Kumbh Sans', sans-serif;
-  margin-bottom: 20px;
-}
-@media only screen and (max-width: 426px) {
-  .section6-new .col-md-6 p {
-    text-align: justify;
-  }
-}
-.section6-new .position {
-  position: relative;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.section6-new .position > img {
-  border-radius: 20px;
-}
 .section3-new {
   background-color: #6282E7;
   background-image: url(../img/cover2.png);
@@ -860,6 +883,147 @@
 @media only screen and (max-width: 768px) {
   .section3-new ul li a {
     font-size: 10px;
+  }
+}
+.Grand-discussion {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Grand-discussion .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+@media only screen and (max-width: 769px) {
+  .Grand-discussion .position {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .position {
+    width: 100%;
+    height: 300px;
+  }
+}
+.Grand-discussion .position .image {
+  width: 100%;
+  height: 450px;
+}
+@media only screen and (max-width: 768px) {
+  .Grand-discussion .position .image {
+    height: auto;
+  }
+}
+.Grand-discussion .position .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .col-lg-6 {
+    text-align: center;
+  }
+}
+.Grand-discussion .col-lg-6 .badge {
+  color: #ffa842;
+  background-color: #ffa84224;
+  padding: 10px 25px;
+  margin: 25px 0px 10px 0px;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .col-lg-6 .badge {
+    margin-top: 70px;
+  }
+}
+.Grand-discussion .col-lg-6 .btn-outline-success {
+  border-color: #ffa842;
+  background-color: #ffa842;
+  color: white;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 15px;
+}
+.Grand-discussion .col-lg-6 h2 {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #0E0B47;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px 0px 20px 0px;
+}
+@media only screen and (max-width: 768px) {
+  .Grand-discussion .col-lg-6 h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .col-lg-6 h2 {
+    font-size: 25px;
+  }
+}
+.Grand-discussion .col-lg-6 .span-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Grand-discussion .col-lg-6 .span-position .size {
+  text-align: center;
+  font-size: 50px;
+  float: left;
+  line-height: 1;
+  font-weight: 600;
+  margin-right: 10px;
+  color: #7e7e7e;
+}
+@media only screen and (max-width: 768px) {
+  .Grand-discussion .col-lg-6 .span-position .size {
+    font-size: 30px;
+  }
+}
+.Grand-discussion .col-lg-6 .span-position p {
+  font-size: 18px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .Grand-discussion .col-lg-6 .span-position p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .col-lg-6 .span-position p {
+    text-align: justify;
+  }
+}
+.Grand-discussion .col-lg-6 > p {
+  margin-bottom: 20px;
+  color: #7e7e7e;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .Grand-discussion .col-lg-6 > p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .Grand-discussion .col-lg-6 > p {
+    text-align: justify;
   }
 }
 .section4 {
@@ -1312,23 +1476,26 @@
 .section6 .position > img {
   border-radius: 20px;
 }
-.section7 {
+.units {
   margin: 60px 0px;
   padding: 20px 0px;
 }
+.units .col-md-4 {
+  width: 95%;
+}
 @media only screen and (max-width: 426px) {
-  .section7 .container {
+  .units .container {
     text-align: center;
   }
 }
-.section7 .container .badge {
+.units .container .badge {
   color: #FFA842;
   background-color: #ffa84224;
   padding: 10px 25px;
   margin: 0px 0px 5px 0px;
   font-family: 'Kumbh Sans', sans-serif;
 }
-.section7 .container .heading {
+.units .container .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,7 +1504,7 @@
           justify-content: space-between;
   margin-top: 20px;
 }
-.section7 .container .heading h2 {
+.units .container .heading h2 {
   font-family: 'Kumbh Sans', sans-serif;
   color: #0E0B47;
   font-weight: 700;
@@ -1345,11 +1512,11 @@
   line-height: 1.2;
 }
 @media only screen and (max-width: 426px) {
-  .section7 .container .heading h2 {
+  .units .container .heading h2 {
     font-size: 25px;
   }
 }
-.section7 .container .heading a {
+.units .container .heading a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1358,12 +1525,12 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.section7 .container .heading a span {
+.units .container .heading a span {
   color: #e4af3c;
   font-weight: 500;
   line-height: 13px;
 }
-.section7 .container .multi-card {
+.units .container .multi-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1372,20 +1539,20 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.section7 .container .multi-card .card {
+.units .container .multi-card .card {
   border-radius: 30px;
 }
 @media only screen and (max-width: 426px) {
-  .section7 .container .multi-card .card {
+  .units .container .multi-card .card {
     margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 426px) {
-  .section7 .container .multi-card .card .image {
+  .units .container .multi-card .card .image {
     height: 300px;
   }
 }
-.section7 .container .multi-card .card .image > img {
+.units .container .multi-card .card .image > img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1393,14 +1560,14 @@
   border-radius: 30px;
 }
 @media only screen and (max-width: 426px) {
-  .section7 .container .multi-card .card .image > img {
+  .units .container .multi-card .card .image > img {
     border-radius: 30px;
   }
 }
-.section7 .container .multi-card .card-body {
+.units .container .multi-card .card-body {
   text-align: center;
 }
-.section7 .container .multi-card .card-body i {
+.units .container .multi-card .card-body i {
   font-size: 20px;
   padding: 2px;
   margin: 0px 10px;
@@ -1408,12 +1575,12 @@
   background-color: #e9d3ba;
   border-radius: 50%;
 }
-.section7 .container .multi-card .card-body > h5 {
+.units .container .multi-card .card-body > h5 {
   color: #0E0B47;
   font-weight: 700;
 }
 @media only screen and (max-width: 426px) {
-  .section7 .container .multi-card .card-body > p {
+  .units .container .multi-card .card-body > p {
     text-align: justify;
   }
 }

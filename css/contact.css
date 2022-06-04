@@ -85,7 +85,7 @@
   width: 130px;
 }
 @media only screen and (max-width: 769px) {
-  .navbar .container .logo a {
+  .navbar .container .logo {
     display: none;
   }
 }
@@ -96,7 +96,7 @@
   width: 80px;
 }
 @media only screen and (max-width: 769px) {
-  .navbar .container .logo-mobile a {
+  .navbar .container .logo-mobile {
     display: block;
   }
 }
