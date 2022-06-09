@@ -630,7 +630,7 @@
 .section3 {
   background-color: #6282E7;
   background-image: url(../img/cover2.png);
-  padding: 20px 0px;
+  padding: 60px 0px;
 }
 @media only screen and (max-width: 426px) {
   .section3 {
