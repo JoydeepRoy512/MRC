@@ -1065,8 +1065,14 @@
         position: relative;
 
         .image {
+            width: 60%;
+
+            @media only screen and(max-width:769px) {
+                width: 100%;
+            }
             @media only screen and(max-width:426px) {
                 height: 300px;
+                width: 100%;
             }
 
             >img {
