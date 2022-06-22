@@ -547,7 +547,6 @@
   background-color: #6282E7;
   background-image: url(/img/cover2.png);
   padding: 60px 0px;
-  margin-top: 100px;
 }
 @media only screen and (max-width: 426px) {
   .home-rehab {
@@ -631,6 +630,7 @@
   background-color: #6282E7;
   background-image: url(../img/cover2.png);
   padding: 60px 0px;
+  margin-top: 100px;
 }
 @media only screen and (max-width: 426px) {
   .section3 {
