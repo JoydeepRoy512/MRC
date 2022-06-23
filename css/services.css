@@ -711,6 +711,10 @@
     font-size: 13px;
   }
 }
+.section4 .col-md-3 .attention .learn-more .accordion .accordion-item .text p {
+  margin: 2px 0px 1px 0px;
+  text-align: left;
+}
 .section5 {
   margin: 60px 0px;
 }

@@ -1567,6 +1567,9 @@
     margin-bottom: 20px;
   }
 }
+.units .container .multi-card .card .image {
+  height: 265px;
+}
 @media only screen and (max-width: 426px) {
   .units .container .multi-card .card .image {
     height: 300px;

@@ -309,18 +309,26 @@
   }
 }
 .banner-bg .row .banner-img {
-  position: absolute;
-  bottom: 0;
-  right: -133px;
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .banner-bg .row .banner-img .image {
-  width: 80%;
-  height: 500px;
+  width: 100%;
+  height: auto;
 }
 .banner-bg .row .banner-img .image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 768px) {
   .banner-bg .row .banner-img .image img {
@@ -336,6 +344,22 @@
 .banner-bg .bg-section2 {
   background-color: #0E0B47;
   background-image: url(/img/cover2.png);
+}
+.banner-bg .bg-section2 .container .text-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+.banner-bg .bg-section2 .container .text-holder h3 {
+  color: #fff;
 }
 .banner-bg .bg-section2 P {
   color: #fff;
@@ -960,7 +984,7 @@
   .section4 .row .col-md-3 .image-holder .image,
   .section4 .row .col-md-15 .image-holder .image {
     height: auto;
-    width: 150px;
+    width: 100%;
   }
 }
 .section4 .row .col-md-3 .image-holder .image img,

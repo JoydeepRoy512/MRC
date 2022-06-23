@@ -332,19 +332,23 @@
         }
 
         .banner-img {
-            position: absolute;
-            bottom: 0;
-            right: -133px;
-            z-index: 1;
+            // position: absolute;
+            // bottom: 30%;
+            // right: 0px;
+            // z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .image {
-                width: 80%;
-                height: 500px;
+                width: 100%;
+                height: auto;
 
                 img {
                     width: 100%;
                     height: 100%;
-
+                    object-fit: cover;
+                    border-radius: 20px;
                     @media only screen and(max-width:768px) {
                         width: 100% !important;
                     }
@@ -362,6 +366,19 @@
     .bg-section2 {
         background-color: #0E0B47;
         background-image: url(/img/cover2.png);
+        .container{
+            .text-holder{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: inherit;
+                h3{
+                    color: #fff;
+                    
+                }
+            }
+        }
 
         P {
             color: #fff;
@@ -987,7 +1004,7 @@
                     width: 300px;
                     @media only screen and(max-width:769px) {
                         height: auto;
-                        width: 150px;
+                        width: 100%;
                         
                     }
                     img{
