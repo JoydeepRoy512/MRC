@@ -442,6 +442,7 @@
   font-weight: 600;
   margin: 0;
   text-align: center;
+  color: #0E0B47;
 }
 @media only screen and (max-width: 768px) {
   .section2 .position .experience .experiance-text > h3 {
@@ -802,6 +803,7 @@
   text-align: center;
   font-size: 25px;
   font-weight: 600;
+  color: #0E0B47;
 }
 .section3 .position .experience .experiance-text > p {
   margin: 0px;
@@ -1226,6 +1228,11 @@
     width: 90%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .section4 .form-alignment .form-position2 .row .form-control {
+    width: 90%;
+  }
+}
 .section4 .form-alignment .form-position2 .row .form-label {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 14px;
@@ -1308,6 +1315,7 @@
           align-items: center;
 }
 .section5 .position .experience .star-text .experiance-text h3 {
+  color: #0E0B47;
   margin: 0;
   text-align: center;
   font-weight: 600;
@@ -1866,6 +1874,7 @@
 .section9 .row1 .col-lg-4 .footer-botton .form-control {
   width: 60%;
   background-color: #FFFFFF2B;
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .section9 .row1 .col-lg-4 .footer-botton .form-control {
